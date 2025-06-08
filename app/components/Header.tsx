@@ -1,10 +1,9 @@
-import { headers } from "next/headers";
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
-export default async function Header() {
-  const headerList = await headers();
-
+export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/75 backdrop-blur dark:border-gray-800 dark:bg-gray-950/75">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
